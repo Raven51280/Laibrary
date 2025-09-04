@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Library Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0070f3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .book {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .book img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+    .book a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #0070f3;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .book a:hover {
+      background: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 My Library</h1>
+    <p>Welcome to my online book collection</p>
+  </header>
+
+  <main class="book-list">
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8231856-L.jpg" alt="Rich Dad Poor Dad">
+      <h2>Rich Dad Poor Dad</h2>
+      <p>By Robert Kiyosaki</p>
+      <a href="https://openlibrary.org/works/OL262758W" target="_blank">Find Book</a>
+    </div>
+
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10521270-L.jpg" alt="The Alchemist">
+      <h2>The Alchemist</h2>
+      <p>By Paulo Coelho</p>
+      <a href="https://openlibrary.org/works/OL82563W" target="_blank">Find Book</a>
+    </div>
+
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/13518250-L.jpg" alt="1984">
+      <h2>1984</h2>
+      <p>By George Orwell</p>
+      <a href="https://openlibrary.org/works/OL7343621W" target="_blank">Find Book</a>
+    </div>
+  </main>
+</body>
+</html>
